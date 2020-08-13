@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Survey Form</title>
+        <link href="styles/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <h1 id="title">SURVEY FORM</h1>
+        <div id="form-container">
+            <p id="description"><strong>Kindly fill this form to help us improve our services</strong></p>
+            <form id="survey-form" for="submit">
+                <div><label id="name-label" for="name">Name</label></div>
+                <div><input type="text" name="name" id="name" class="input-field"
+                        placeholder="Enter your full name here" required /></div>
+                <div><label id="email-label" for="email">Email</label></div>
+                <div><input type="email" name="email" id="email" class="input-field" placeholder="Enter your Email"
+                        required /></div>
+                <div><label id="number-label" for="number">Age(optional)</label></div>
+                <div><input type="number" name="age" id="number" min="18" max="99" class="input-field"
+                        placeholder="How old are you?" /></div>
+                <br>
+                <div><label for="dropdown">Local Government Area of Residence</label></div>
+                <div><select class="dropdown">
+                        <option disabled value>Select one option</option>
+                        <option>Agege</option>
+                        <option>Ajeromi-Ifelodun</option>
+                        <option>Alimosho</option>
+                        <option>Amuwo-Odofin</option>
+                        <option>Apapa</option>
+                        <option>Badagry</option>
+                        <option>Epe</option>
+                        <option>Eti-Osa</option>
+                        <option>Ibeju-Lekki</option>
+                        <option>Ifako-Ijaye</option>
+                        <option>Ikeja</option>
+                        <option>Ikorodu</option>
+                        <option>Kosofe</option>
+                        <option>Lagos Island</option>
+                        <option>Lagos Mainland</option>
+                        <option>Mushin</option>
+                        <option>Ojo</option>
+                        <option>Oshodi-Isolo</option>
+                        <option>Shomolu</option>
+                        <option>Surulere</option>
+                    </select></div>
+                <br>
+                <div><label for="dropdown">State of Residence</label></div>
+                <div for="state"> (Please Select a State if outside Lagos) </div>
+                <div><select id="dropdown" name="state" class="dropdown">
+                        <option value="Abia">Abia</option>
+                        <option value="Adamawa">Adamawa</option>
+                        <option value="Akwa Ibom">Akwa Ibom</option>
+                        <option value="Anambra">Anambra</option>
+                        <option value="Bauchi">Bauchi</option>
+                        <option value="Bayelsa">Bayelsa</option>
+                        <option value="Benue">Benue</option>
+                        <option value="Borno">Borno</option>
+                        <option value="Cross River">Cross River</option>
+                        <option value="Delta">Delta</option>
+                        <option value="Ebonyi">Ebonyi</option>
+                        <option value="Edo">Edo</option>
+                        <option value="Ekiti">Ekiti</option>
+                        <option value="Enugu">Enugu</option>
+                        <option value="Gombe">Gombe</option>
+                        <option value="Imo">Imo</option>
+                        <option value="Jigawa">Jigawa</option>
+                        <option value="Kaduna">Kaduna</option>
+                        <option value="Kano">Kano</option>
+                        <option value="Katsina">Katsina</option>
+                        <option value="Kebbi">Kebbi</option>
+                        <option value="Kogi">Kogi</option>
+                        <option value="Kwara">Kwara</option>
+                        <option value="Nasarawa">Nasarawa</option>
+                        <option value="Niger">Niger</option>
+                        <option value="Ogun">Ogun</option>
+                        <option value="Ondo">Ondo</option>
+                        <option value="Osun">Osun</option>
+                        <option value="Oyo">Oyo</option>
+                        <option value="Plateau">Plateau</option>
+                        <option value="Rivers">Rivers</option>
+                        <option value="Sokoto">Sokoto</option>
+                        <option value="Taraba">Taraba</option>
+                        <option value="Yobe">Yobe</option>
+                        <option value="Zamfara">Zamfara</option>
+                        <option value="FCT">FCT</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="status">Marital Status</label>
+                </div>
+                <div>
+                    <ul style="list-style: none;" class="rad">
+                        <li class="radio">
+                            <input type="radio" name="radio-buttons" class="status" value="1">Single</li>
+                        <li class="radio">
+                            <input type="radio" name="radio-buttons" class="status" value="2">Married</li>
+                        <li class="radio">
+                            <input type="radio" name="radio-buttons" class="status" value="3">Divorced</li>
+                        <li class="radio">
+                            <input type="radio" name="radio-buttons" class="status" value="4">Widowed</li>
+                    </ul>
+                </div>
+                <br>
+                <div><label for="places-visited">Continent(s) Visited</label></div>
+                <div id="checkbox">
+                    <ul style="list-style: none;" class="checkbox">
+                        <li><input type="checkbox" name="places-visited" value="Afr">Africa</li>
+                        <li><input type="checkbox" name="places-visited" value="Ant">Antartica</li>
+                        <li><input type="checkbox" name="places-visited" value="Asi">Asia</li>
+                        <li><input type="checkbox" name="places-visited" value="Eur">Europe</li>
+                        <li><input type="checkbox" name="places-visited" value="NAm">North America</li>
+                        <li><input type="checkbox" name="places-visited" value="Oce">Oceania</li>
+                        <li><input type="checkbox" name="places-visited" value="SAm">South America</li>
+                    </ul>
+                </div>
+                <br>
+                <div><label class="date" for="date">Date of Form Registration</label></div>
+                <div><input class="dates" type="date"></div>
+                <br>
+                <div><label>Please leave a comment or suggestion</label></div>
+                <div><textarea id="comments" class="input-field" style="height:60px;resize:vertical;" name="comment"
+                        placeholder="Enter your comment here..."></textarea></div>
+
+                <div><button id="submit" type="submit">Submit Form</button></div>
+
+            </form>
+        </div>
+    </body>
+
+</html>

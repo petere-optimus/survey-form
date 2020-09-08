@@ -81,3 +81,21 @@ label {
     border-radius: 1px;
     align: justify;
 }
+
+@media (max-width: 460px) {
+  div {
+    margin: auto;
+  }
+
+  .input-field, 
+  .dropdown,
+  .dates,
+  label,
+  ul li {
+    margin-left: 15px;
+  }
+  
+  #submit {
+    margin-left: 20px;
+  }
+}
